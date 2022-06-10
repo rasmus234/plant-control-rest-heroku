@@ -9,7 +9,7 @@ import {ImageModule} from './image/image.module';
 
 @Module({
     imports: [
-        MongooseModule.forRoot(process.env.CONNECTION_STRING || "mongodb://localhost/plantDB"),
+        MongooseModule.forRoot(process.env.CONNECTION_STRING || "mongodb+srv://plant:plant@plant-control-db.cxazk.mongodb.net"),
         LoggerModule, PlantModule, PairingModule, LogModule, CertificateModule, ImageModule
     ],
     controllers: [],
